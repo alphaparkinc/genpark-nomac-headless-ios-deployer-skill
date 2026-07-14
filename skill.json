@@ -1,0 +1,30 @@
+{
+  "name": "genpark-nomac-headless-ios-deployer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - NoMac headless iOS publishing orchestrator.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "ios",
+    "deployer",
+    "nomac"
+  ],
+  "inputs": {
+    "agent_bundle_path": {
+      "type": "string"
+    },
+    "target_environment": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "build_success": {
+      "type": "boolean"
+    },
+    "deploy_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
